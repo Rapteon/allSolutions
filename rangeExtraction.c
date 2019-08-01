@@ -22,7 +22,7 @@ void rangeExtractor(int *pos, int size){
 			distance++;
 
 		}
-		else if(distance>1){
+		else if(distance>=1){
 			printf("%d-%d,", copyOfArray[initialPosition], copyOfArray[currentPosition]);
 			/*The initialPosition changes to the value after the current position since we know that the currentPosition is not contiguous with 				the next.*/
 			initialPosition = currentPosition+1;
@@ -48,9 +48,9 @@ void rangeExtractor(int *pos, int size){
 }
 
 int main(){
-	int array[] = {0, 1, 2, 4, 6, 7, 8, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 30, 31, 32, 33, 35, 36, 37, 38, 39, 41, 42, 43};
+	int array[] = {0, 1, 2, 4, 6, 7, 8, 11, 12, 14, 15, 16, 17, 22, 23, 24, 25, 27, 28, 29, 30, 31, 32, 33, 35, 36, 37, 38, 39, 41, 42, 43};
 	int initialPosition = 0, currentPosition = 0, distance = 0;
 
-	rangeExtractor(&array[0], 36);
+	rangeExtractor(&array[0], 32);
 }
 

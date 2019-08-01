@@ -1,0 +1,7 @@
+DATE: 20190727
+rangeExtraction.c works partially.
+##############################################################################
+DATE: 20190801
+fileExists.c gives incorrect result when `input.txt` exists in current directory as well as in the `docs` directory.
+##############################################################################
+
