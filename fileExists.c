@@ -1,4 +1,5 @@
 /*Program to check whether a file `input.txt` exists in the current directory or in the `./docs` directory; AUTHOR: rapteon; DATE: 1st August 2019*/
+/*Problem Link: https://rosettacode.org/wiki/Check_that_file_exists */
 #include<stdio.h>
 #include<unistd.h>
 
